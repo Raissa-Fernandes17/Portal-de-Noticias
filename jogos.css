@@ -301,6 +301,10 @@
             background-color: #03ffd9; /* Ciano */
             color: #333; /* Altera a cor do texto no topo para preto, pois o fundo é claro */
         }
+         .card-marrom .card-topo {
+            background-color: rgb(75, 61, 20); /* Marrom */
+            color: #fff; /* Altera a cor do texto no topo para branco, pois o fundo é escuro */
+        }
 
 
         /* 5. Responsividade */

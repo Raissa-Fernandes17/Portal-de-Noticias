@@ -79,16 +79,25 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+.main-content2-wrapper {
+    display: flex;
+    justify-content: center; /* CENTRALIZA O BLOCO DO ARTIGO HORIZONTALMENTE */
+    padding: 30px 20px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 /* Wrapper do Artigo */
 .article-container {
-    max-width: 750px; /* Largura ideal para leitura */
+    max-width: 900px; /* Largura ideal para leitura */
     width: 100%;
     background-color: #ffffff;
     padding: 30px 40px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     border-radius: 8px; 
 }
+
 
 /* -------------------- ESTILOS DO TEXTO E IMAGEM -------------------- */
 
@@ -101,6 +110,15 @@ body {
     font-weight: 700;
     color: #222222;
 }
+.article-title2 {
+    font-size: 2.3em; 
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #222222;
+}
+
 
 /* Subtexto/Introdução */
 .article-subtitle {
@@ -199,6 +217,17 @@ body {
     padding: 30px 20px; 
     box-sizing: border-box;
 }
+.main-content-wrapper2 {
+    display: flex;
+    /* Essa propriedade alinha os itens filhos (o article-container) ao centro do eixo principal (horizontal) */
+    justify-content: center; 
+    
+    /* Garante que o wrapper ocupe toda a largura da tela */
+    width: 100%;
+    padding: 30px 20px; 
+    box-sizing: border-box;
+}
+
 
 /* 2. O Bloco da Notícia: Define a largura do conteúdo centralizado */
 .article-container {
@@ -223,3 +252,58 @@ body {
     max-width: 100%;
     height: auto; 
 }
+
+.quote-block {
+            /* Padding e margem superior/inferior para separação visual */
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-top: 1px solid #e5e7eb; /* Linha sutil para base */
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .quote-container {
+            /* Container principal para centralizar e limitar a largura */
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quote-text {
+            /* Estilo da fonte conforme a imagem: grande, negrito */
+            font-size: 1.5rem; /* 24px */
+            line-height: 2.1rem;
+            font-weight: 500; /* Média a Negrito */
+            color: #1f2937; /* Cinza escuro */
+            margin-bottom: 1.5rem;
+            padding-left: 20px; /* Afastamento interno */
+            padding-right: 20px;
+        }
+
+        /* Estilo para a linha vermelha decorativa */
+        .separator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10px; /* Altura do separador */
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            width: 30px; /* Largura das barras */
+            height: 3px; /* Espessura da linha */
+            background-color: #ef4444; /* Cor vermelha (Tailwind red-500) */
+            margin: 0 5px;
+            border-radius: 9999px; /* Arredondamento para formato de pílula */
+        }
+        
+        /* Ajuste do tamanho da fonte para mobile */
+        @media (max-width: 640px) {
+            .quote-text {
+                font-size: 1.25rem; /* 20px em telas menores */
+                line-height: 1.8rem;
+            }
+            .quote-block {
+                padding: 2rem 0;
+            }
+        }

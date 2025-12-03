@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #800000; 
+    color: rgb(224, 224, 224);
+    padding: 20px;
+    text-align: center;
+}
+
+.container1 {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
+}
+
+h2 {
+    color: #c40000;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+button {
+    background: #c40000;
+    border: none;
+    padding: 14px 25px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #900000;
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
